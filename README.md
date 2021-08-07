@@ -1,10 +1,10 @@
 # This Too Shall Pass: Predicting Offensive Play-Calling in the NFL
 
-In the NFL, all offensive plays besides specialized ones (punts, kneel-downs, etc.)  can be classified into one of two categories: run or pass.  The ability to predict whether a particular play by an opponent will be a run or a pass based on the in-game situation would be highly useful for defensive coaches, and could increase their chances of winning the game.  In this project, I leveraged machine learning classification models to predict whether an NFL play would be a run or a pass based on readily available pre-snap information.
+In the NFL, all offensive plays besides specialized ones (punts, kneel-downs, etc.)  can be classified into one of two categories: run or pass.  The ability to predict whether a particular play by an opponent will be a run or a pass based on the in-game situation would be highly useful for defensive coaches, and could increase their chances of winning the game.  Offensive coaches, too, could examine the predictability of their own play-calling and see if that is something they could potentially increase without sacrificing effectiveness.  In this project, I leveraged machine learning classification models to predict whether an NFL play would be a run or a pass based on readily available pre-snap information.
 
 ## Design and Data
 
-I used a large dataset from [Kaggle](https://www.kaggle.com/pepepython/spotify-huge-database-daily-charts-over-3-years?select=Database+to+calculate+popularity.csv) containing all the plays from the 2017 NFL season (of which ~32,000 were Runs or Passes).  I used Pandas to clean and process the data, as well as engineer a several extra features (binary features for the down, third and long, within field goal range, etc.).  Since I am more interested in the *intent* rather than the result of the play, I used the following definitions of "Run" and "Pass":
+I used a large dataset from [Kaggle](https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016?select=NFL+Play+by+Play+2009-2018+%28v5%29.csv) containing all the plays from the 2017 NFL season (of which ~32,000 were Runs or Passes).  I used Pandas to clean and process the data, as well as engineer a several extra features (binary features for the down, third and long, within field goal range, etc.).  Since I am more interested in the *intent* rather than the result of the play, I used the following definitions of "Run" and "Pass":
 
 - Run: all designed runs.   If the quarterback dropped back to pass, but ended up scrambling for a gain of yards, I considered that to be a pass, since that was the intent of the play.
 
@@ -12,7 +12,7 @@ I used a large dataset from [Kaggle](https://www.kaggle.com/pepepython/spotify-h
 
 ## Tools and Algorithms
 
-I used Pandas for data exploration, cleaning and feature engineeering, and sci-kit learn to  train the machine learning models. (please see [this](https://github.com/andreilevin/Classification_project/blob/main/nfl-cleaning.ipynb) jupyter notebook  for the initial cleaning and [this one](https://github.com/andreilevin/Classification_project/blob/main/nfl-modeling2.ipynb)  for the main analysis.
+I used Pandas for data exploration, cleaning and feature engineeering, and scikit-learn to  train the machine learning models. (please see [this](https://github.com/andreilevin/Classification_project/blob/main/nfl-cleaning.ipynb) jupyter notebook  for the initial cleaning and [this one](https://github.com/andreilevin/Classification_project/blob/main/nfl-modeling2.ipynb)  for the main analysis.
 
 
 ## Communication

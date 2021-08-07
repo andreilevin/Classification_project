@@ -17,5 +17,5 @@ I used Pandas for data exploration, cleaning and feature engineeering, and sciki
 
 ## Communication
 
-Using accuracy as the main metric, the goal was to improve on the baseline accuracy of 60.4%, which is generated from a naive classification of all plays as the "Pass" play majority class.  The best ML models achieved a test set accuracy of ~74%.  More information and ideas for further work can be seen in the slide deck [here](https://github.com/andreilevin/Classification_project/blob/main/AndreiPresentation.pdf).  
+Using accuracy as the main metric, the goal was to improve on the baseline accuracy of 60.4%, which is generated from a naive classification of all plays as the "Pass" play majority class.  The best ML models achieved an accuracy of ~74% on unseen data.  More information and ideas for further work can be seen in the slide deck [here](https://github.com/andreilevin/Classification_project/blob/main/AndreiPresentation.pdf).  
 

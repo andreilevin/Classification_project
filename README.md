@@ -10,9 +10,9 @@ In the National Football League (NFL), all offensive plays besides a few special
 
 I used a large [dataset](https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016?select=NFL+Play+by+Play+2009-2018+%28v5%29.csv) from Kaggle containing all the plays from the 2017 NFL season (of which ~32,000 were runs or passes).  I used Pandas to clean and process the data, as well as to engineer a several extra features (a "third and long" feature, a "within field goal range" feature, binary features for the down, etc.).  Since I was more interested in the *intent* rather than the *result* of the play, I used the following definitions of "run" and "pass":
 
-- Run: all designed runs.   If the quarterback dropped back to pass, but ended up scrambling for a gain of yards, I considered that to be a pass, since that was the intent of the play.
+- **Run**: all designed runs.   If the quarterback dropped back to pass, but ended up scrambling for a gain of yards, I considered that to be a pass, since that was the intent of the play.
 
-- Pass: all designed passes.  If a quarterback dropped back to pass and got sacked behind the line of scrimmage, I considered that to be a pass for the purposes of this model as well.
+- **Pass**: all designed passes.  If a quarterback dropped back to pass and got sacked behind the line of scrimmage, I considered that to be a pass for the purposes of this model as well.
 
 ## Tools 
 
